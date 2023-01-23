@@ -20,16 +20,16 @@ let price = distanza * prezzoKm;
 
 // condizioni
 if (age >= 18 && age <= 65) {
-    alert (price.toPrecision (3));
+    alert("Il tuo biglietto costerà: " + (price.toPrecision (3)) + "$");
 
 } else if (age < 18) {
 // 4) IF minorenne sconto 20%
-    let price = price - ((price / 100) * 20);
-    alert (price.toPrecision(3));
+    let salePrice = price - ((price / 100) * 20);
+    alert("Il tuo biglietto costerà: " + (salePrice.toPrecision(3)) + "$");
 } else {
 // 5) IF over65 sconto 40%
-    let price = price - ((price/100)*40);
-    alert (price.toPrecision(3));
+    let salePrice = price - ((price/100)*40);
+    alert("Il tuo biglietto costerà: " + (salePrice.toPrecision(3)) + "$");
 }
 
 
