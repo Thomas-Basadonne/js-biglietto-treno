@@ -21,8 +21,8 @@ let price = distanza * prezzoKm;
 console.log(price);
 } else if (età < 18) {
 // 4) IF minorenne sconto 20%
-let price = price - 20%
-} else (età > 65){
+let price = price - 20%;
+} else {
 // 5) IF over65 sconto 40%
 let price = price - 40%
 }
