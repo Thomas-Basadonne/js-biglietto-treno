@@ -12,22 +12,24 @@ let distanza = prompt("Quanti chilometri devi percorrere?");
 console.log(distanza);
 
 // 2) chiedere età passeggero
-let età = prompt("Quanti anni hai?");
-console.log(età);
+let age = prompt("Quanti anni hai?");
+console.log(age);
 
 // 3) calcolare prezzo biglietto
-if (età >= 18 && età <= 65) {
 let price = distanza * prezzoKm;
-} else if (età < 18) {
+
+// condizioni
+if (age >= 18 && age <= 65) {
+    alert (price.toPrecision (3));
+
+} else if (age < 18) {
 // 4) IF minorenne sconto 20%
-let price = price - 20%;
+    let price = price - ((price / 100) * 20);
+    alert (price.toPrecision(3));
 } else {
 // 5) IF over65 sconto 40%
-let price = price - 40%
+    let price = price - ((price/100)*40);
+    alert (price.toPrecision(3));
 }
-
-
-// 6) trovare comando output con decimali
-
 
 
