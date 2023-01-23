@@ -6,7 +6,7 @@
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 
-// const prezzoKm = 0.21;
+const prezzoKm = 0.21;
 // 1) chiedere numero km
 let distanza = prompt("Quanti chilometri devi percorrere?");
 console.log(distanza);
@@ -18,7 +18,6 @@ console.log(età);
 // 3) calcolare prezzo biglietto
 if (età >= 18 && età <= 65) {
 let price = distanza * prezzoKm;
-console.log(price);
 } else if (età < 18) {
 // 4) IF minorenne sconto 20%
 let price = price - 20%;
